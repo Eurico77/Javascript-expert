@@ -1,5 +1,5 @@
 const File = require('./src/file')
-const { error} = require('./src/constants')
+const { error } = require('./src/constants')
 const { rejects } = require('assert')
 const path = require('./src/utils/paths')
 
