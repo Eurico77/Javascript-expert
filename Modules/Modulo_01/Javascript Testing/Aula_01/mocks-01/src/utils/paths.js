@@ -1,8 +1,8 @@
 const path = {
     invalid: './mocks/emptyFile-invalid.csv',
-    fuorInvalid: './mocks/fuorItens-invalid.csv',
+    fuorInvalid: './mocks/fourItems-invalid.csv',
     invalidHeader: './mocks/invalid-header.csv',
-    threeItensValid: './mocks/threeeItens-valid.csv'
+    threeItensValid: './mocks/threeItems-valid.csv'
 
 }
 
