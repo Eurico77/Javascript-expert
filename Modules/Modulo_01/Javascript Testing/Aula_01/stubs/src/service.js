@@ -14,7 +14,7 @@ class Service {
 
         return {
             name: result.name,
-            surfaceWater: result.surface_water,
+            surface_water: result.surface_water,
             aparedIn: result.films.length,
         }
     }
