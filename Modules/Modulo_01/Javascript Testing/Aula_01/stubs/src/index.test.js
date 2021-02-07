@@ -36,7 +36,7 @@ const mocks = {
                 }
                 const res = await service.getPlanets(BASE_URL_1)
                 deepStrictEqual(res, expected)
-                console.log(res);
+                
             }
             {
                 const expected ={
