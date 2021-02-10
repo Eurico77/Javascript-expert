@@ -6,6 +6,7 @@ const DEFAULT_OPTION = {
     maxLines: 3,
     fields: ["id", "name", "profession", "age"]
 }
+
 class File {
     static async csvToJson(filePath) {
         const content = await File.getFileContent(filePath)
