@@ -10,7 +10,7 @@ console.assert(
 );
 
 console.assert(
-  ("hello" && 123) === "hello",
+  ("hello" && 123) === 123,
   "|| retorna o ultimo elemento se os dois forem true"
 );
 
