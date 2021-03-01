@@ -14,5 +14,5 @@ const person = {
 
 // console.log(''.concat(person));
 
-console.log(String(person));
-console.log(Number(person));
+console.log('toString:',String(person));
+console.log('valueOf',Number(person));
