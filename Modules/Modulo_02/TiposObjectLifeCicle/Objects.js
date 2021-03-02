@@ -15,7 +15,7 @@ const person = {
     
     //ele manda em tudo!!!
     [Symbol.toPrimitive](coercionType) {
-        console.log('trying to convert to', coercionType);
+        // console.log('trying to convert to', coercionType);
 
         const typpes = {
             string: JSON.stringify(this),
