@@ -18,8 +18,11 @@ const person = {
         console.log('trying to convert to', coercionType);
 
         const typpes = {
-
+            string: JSON.stringify(this),
+            number: '007'
         }
+
+        return typpes[coercionType] || typpes.string
     }
 };
 
@@ -29,4 +32,7 @@ const person = {
 // console.log('valueOf', Number(person));
 
 // depois de add o primitive
-console.log('String');
+console.log('String:', String(person));
+console.log('Number:', Number(person));
+// chama a coversão default
+console.log('Date:', new Date(person));
