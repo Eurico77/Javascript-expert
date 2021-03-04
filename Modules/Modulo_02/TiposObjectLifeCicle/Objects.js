@@ -32,7 +32,9 @@ const person = {
 // console.log('valueOf', Number(person));
 
 // depois de add o primitive
-console.log("String:", String(person));
-console.log("Number:", Number(person));
+// console.log("String:", String(person));
+// console.log("Number:", Number(person));
 // chama a coversão default
-console.log("Date:", new Date(person));
+// console.log("Date:", new Date(person));
+
+console.assert(person + 0 === '{"name":"EuricoMagal","age":23}0')
