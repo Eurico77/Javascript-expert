@@ -7,11 +7,11 @@ const person = {
         // console.log('opa, passei aqui');
         return `Name: ${this.name}, Age: ${this.age}`
     },
-    //NUMBER: 1 se não for primitivo, chama o toString()
+    //NUMBER: se não for primitivo, chama o toString()
     valueOf() {
         // return 224
         return { hey: 'Dude' }
-    },
+    },  
     
     //ele manda em tudo!!!
     [Symbol.toPrimitive](coercionType) {
@@ -36,3 +36,4 @@ console.log('String:', String(person));
 console.log('Number:', Number(person));
 // chama a coversão default
 console.log('Date:', new Date(person));
+
