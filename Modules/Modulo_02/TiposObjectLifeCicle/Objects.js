@@ -15,7 +15,7 @@ const person = {
 
   //ele manda em tudo!!!
   [Symbol.toPrimitive](coercionType) {
-    // console.log('trying to convert to', coercionType);
+    console.log("trying to convert to", coercionType);
 
     const typpes = {
       string: JSON.stringify(this),
@@ -37,4 +37,14 @@ const person = {
 // chama a coversão default
 // console.log("Date:", new Date(person));
 
-console.assert(person + 0 === '{"name":"EuricoMagal","age":23}0')
+console.assert(person + 0 === '{"name":"EuricoMagal","age":23}0');
+console.log("is true ?", !!person);
+console.assert(!!person);
+console.log("string.concat", "isso".concat(person));
+console.assert(
+  "isso".concat(person) === ' isso{"name":"EuricoMagal","age":23}'
+);
+
+console.assert(person == String(person))
+
+
